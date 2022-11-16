@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skillshare Login Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <a href="#" class="logo">
+          <img src="./images/logo.png" alt="" />
+        </a>
+        <a href="#" class="browse">Browse</a>
+      </div>
+      <div class="cta-btns">
+        <button id="login" class="btn btn-secondary">Sign In</button>
+        <button class="btn btn-primary" id="signup">Sign Up</button>
+      </div>
+    </header>
+    <div class="overlay hidden" id="overlay"></div>
+    <div class="modal hidden" id="modal">
+      <div class="left">
+        <p>Welcome Back to Skillshare</p>
+        <hr />
+        <p>Sign in to continue to your account</p>
+      </div>
+      <div class="right">
+        <div class="header">
+          <button id="close-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="other-signin">
+          <button class="btn btn-outline">Signin with Facebook</button>
+          <button class="btn btn-outline">Signin with Google</button>
+          <button class="btn btn-outline">Signin with Apple</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

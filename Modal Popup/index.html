@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Window Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="trigger-btn">Open Cookies</button>
+    <div id="modal" class="cookie-popup hidden">
+      <button id="close-btn" class="close-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <img src="./images/cookie.png" alt="" />
+      <h3>Hey! This site uses Cookies</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, facere
+        saepe aut esse nemo ducimus, dolore ab nostrum maxime exercitationem
+        adipisci, officiis laboriosam odio. Minus libero unde error illo sed!
+      </p>
+      <button class="understood close-btn">Understood</button>
+    </div>
+    <div id="overlay" class="overlay hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
